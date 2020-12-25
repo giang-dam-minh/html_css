@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/test.css" />
+</head>
+<body>
+    <div> 
+        <div class="header">HOÀNG VIỆT TRAVEL-CÔNG TY DU LỊCH UY TÍN HÀNG ĐẦU VIỆT NAM</div>
+        <div class="banner">
+            <a><div class="logo"></div></a>           
+            <input id="search" name="searchBox" /><input id="btnSearch" type="submit" value="Tìm kiếm" />
+            <p id="txt1">BETTER THAN YOU EXPECTED!</p>
+            <p>A MEMBER OF HOANGVIET OPENTOUR GROUP (HVO)</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a>@Html.ActionLink("Trang chủ","HomePage","test")</a></li>
+                <li>@Html.ActionLink("Giới thiệu","Intro","test")</li>
+                <li>TOUR TRONG NƯỚC</li>
+                <li>TOUR NƯỚC NGOÀI</li>
+                <li>TIN HOT</li>
+                <li>ĐẶT PHÒNG</li>
+                <li>VISA</li>
+                <li>LỊCH TOUR</li>
+                <li>LIÊN HỆ</li>
+            </ul>
+        </div>
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

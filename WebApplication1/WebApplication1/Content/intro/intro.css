@@ -1,0 +1,45 @@
+﻿body {
+}
+#intro-header{
+    margin-left:40px;
+    color:#e27a1a;
+}
+.intro-logo{
+    height:107px;
+    width:268px;
+    background-image:url(../image/logo.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin-left:auto;
+    margin-right:auto;
+}
+.intro1{
+    margin-top:10px;
+    width:450px;
+    margin-left:auto;
+    margin-right:auto;
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+.intro2{
+    margin-top:10px;
+    width:313px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#FFA07A;
+    font-size:20px;
+    font-weight:bold;
+}
+.intro-content{
+    margin-top:130px;
+    margin-left:360px;
+}
+.intro-content h4{
+    color:green;
+}
+.thanh-tich{
+    margin-left:360px;
+    margin-top:30px;
+    width:1200px;
+}
