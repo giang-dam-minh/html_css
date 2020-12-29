@@ -1,0 +1,52 @@
+﻿.nav{
+    float:left;
+    width:220px;
+    height:100vh;
+    border-right:1px solid #BBBBBB;
+    margin-top:-8px;
+}
+.toggle input{
+    border:0px;
+    background-image:url(../../content/img/toggle.png);
+    height:24px;
+    width:24px;
+    float:left;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.toggle input:hover{
+    cursor:pointer;
+}
+.logo{
+    background-image:url(../../content/img/cukcuk-logo.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:24px;
+    width:200px;
+    margin-left:31px;
+}
+.logo-toggle{
+    margin-left:24px;
+    margin-top:24px;
+}
+img{
+    width:20px;
+    height:20px;
+    padding-right:10px;
+    padding-top:12px;
+}
+li{
+    list-style:none;
+    height:44px;
+    display:flex;
+    padding-left:35px;
+    line-height:44px;
+}
+.menu ul{
+    margin-left:-48px;
+    margin-top:8px;
+}
+.menu ul li:hover{
+    background-color:#BBBBBB;
+    cursor:pointer;
+}

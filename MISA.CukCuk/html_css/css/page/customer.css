@@ -1,0 +1,17 @@
+﻿.nav{
+    float:left;
+    width:220px;
+    height:100vh;
+    border-right:1px solid #BBBBBB;
+    margin-top:-8px;
+}
+.header{
+    width:calc(100% - 221px);
+    height:48px;
+    border-bottom:1px solid #BBBBBB;
+    margin-left:221px;
+}
+.content{
+    margin-left:221px;
+    width:calc(100% - 221px);
+}

@@ -1,0 +1,98 @@
+﻿.dialog-detail{
+   display:none;
+}
+ 
+    .dialog-detail .dialog-model{
+        position:fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-color:black;
+        z-index:999;
+        opacity:0.7;
+    }
+    .dialog-detail .dialog-content{
+        border-radius:5px;
+        padding:24px;
+        position:absolute;
+        width:650px;
+        height:600px;
+        background-color:#ffffff;
+        z-index:1000;
+        top:calc(50% - 300px);
+        left:calc(50% - 400px);
+    }
+        .dialog-detail .dialog-content .dialog-content-header{
+            display:flex;
+            justify-content:space-between;
+        }
+        .dialog-detail .dialog-content .dialog-content-header button {
+            position:relative;
+            margin-top:-24px;
+            margin-right:-24px;
+            border:0px;
+            border-radius:5px;
+            outline:none;
+            background-image: url('../../content/icon/x.svg');
+            height:30px;
+            width:30px;
+            background-repeat:no-repeat;
+            background-size:contain;
+            background-position:center;
+        }
+        .dialog-detail .dialog-content .dialog-content-header button:hover{
+            cursor:pointer;
+            background-color:#BBBBBB;
+        }
+        .dialog-detail .dialog-content .dialog-content-img{
+            height:200px;
+            width:200px;
+            margin-top:20px;
+            float:left;
+        }
+        .dialog-detail .dialog-content .dialog-content-img button {
+            height: 130px;
+            width: 130px;
+            margin-left:30px;
+            outline:none;
+            border:1px solid black;
+            border-radius:65px;
+            background-image: url('../../content/img/default-avatar.jpg');
+            background-repeat:no-repeat;
+            background-size:contain;
+            background-position:center;
+        }
+        .dialog-detail .dialog-content .dialog-content-img button:hover{
+            cursor:pointer;
+            background-color:#BBBBBB;
+        }
+        .dialog-detail .dialog-content .dialog-content-rightImg{
+            display:flex;
+            justify-content:space-between;
+            margin-left:20px;
+        }
+        .dialog-detail .dialog-content .dialog-content-rightImg .input,select{
+            outline:none;
+            height:30px;
+            width:200px;
+            border-radius:5px;
+            border-color:#DBDEFF;
+            margin-bottom:16px;
+        }
+        .dialog-detail .dialog-content .dialog-content-rightImg select{
+            padding-left:10px;
+            height:35px;
+            width:209px;
+        }
+        .dialog-detail .dialog-content .dialog-content-rightImg .left{
+            margin-left:16px;
+            width:50%;
+            height:200px;
+        }
+        .dialog-detail .dialog-content .dialog-content-rightImg .right{
+            width:50%;
+            height:200px;
+        }
+        
+           

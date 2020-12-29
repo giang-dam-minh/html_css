@@ -1,0 +1,102 @@
+﻿.content{
+    margin-left:221px;
+    width:calc(100% - 221px);
+}
+.content .content-header{
+    padding-left:24px;
+    padding-top:16px;
+    display: flex;
+    justify-content:space-between;
+}
+.content .content-header p{
+   font-size:20px;
+   font-weight:bold;
+}
+.content .content-header input{
+    outline:none;
+    height:36px;
+    padding-left:40px;
+    padding-right:16px;
+    background-color:#019160;
+    color:#ffffff;
+    background-image:url(../../content/icon/add.png);
+    background-repeat: no-repeat;
+    background-position:16px;
+    border-radius:4px; 
+    text-align:center;
+    border:0px;
+}
+.content .content-search{
+    padding-left:24px;
+    display: flex;
+    justify-content:space-between;
+}
+.content .content-header input:hover{
+    background-color:#2FBE8E;
+    cursor:pointer;
+}
+.content .content-search #btnSearch{
+    outline:none;
+    height:40px;
+    width:187px;
+    border:1px solid #bbbbbb;
+    border-radius:4px;
+    background-image:url(../../content/icon/search.png);
+    background-repeat:no-repeat;
+    background-position:16px;
+    padding-left:40px;
+}
+.content .content-search #btnReload{
+    outline:none;
+    height:40px;
+    width:40px;
+    margin-top:-20px;
+    background-image:url(../../content/icon/refresh.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    border:1px solid #bbbbbb;
+    border-radius:4px;
+}
+#btnReload:hover{
+    cursor:pointer;
+    background-color:#e5e5e5;
+}
+.content .content-table{
+    height:500px;
+    width:100%;
+    margin-left:24px;
+}
+.content .content-table table{
+    display:inline-block;
+    overflow:auto;
+    height:660px;
+    width:98%;
+}
+.content table th,td{
+    border-bottom:1px solid #BBBBBB;
+    padding-left:16px;
+    padding-right:16px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:left;
+}
+.content table #address{
+    max-width:350px;
+     width: 350px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+.content .pagging{
+    display:flex;
+    justify-content:space-between;
+    height:56px;
+    width:100%;
+    margin-top:calc(100vh - 753px);
+}
+.content .pagging .pagging-left{
+    padding-left:24px;
+}
+.content .pagging .pagging-right{
+    padding-right:16px;
+}

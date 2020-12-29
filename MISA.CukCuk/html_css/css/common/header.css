@@ -1,0 +1,49 @@
+﻿.header{
+    width:calc(100% - 221px);
+    height:48px;
+    border-bottom:1px solid #BBBBBB;
+    margin-left:221px;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+}
+.header .left{
+    padding-left:16px;
+    padding-top:12px;
+}
+.header .left select{
+    border:0px;
+    padding-left:16px;
+    padding-right:16px;
+    font-weight:bold;
+}
+.header .right{
+    height:30px;
+    width:206px;
+    display:flex;
+    justify-content:space-between;
+}
+.header .right .logoUser{
+    height:30px;
+    width:30px;
+    background-image:url(../../content/icon/avatar-default.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.header .right .userName{
+    padding:8px 16px 0px 16px;
+}
+.header .right .option{
+    height:30px;
+    width:30px;
+    border:0px;
+    border-radius:2px;
+    padding-right:16px;
+    background-image:url(../../content/icon/option.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.option:hover{
+    cursor:pointer;
+}

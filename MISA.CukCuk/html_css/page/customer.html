@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="../css/common/main.css?v=1.1" rel="stylesheet" />
+    <link href="../css/common/common.css" rel="stylesheet" />
+    <link href="../css/common/dialog.css" rel="stylesheet" />
+    <link href="../css/common/header.css" rel="stylesheet" />
+    <link href="../css/common/content.css" rel="stylesheet" />
+    <link href="../css/common/nav.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="nav">
+        <div class="logo-toggle">
+            <div class="toggle"><input type="button" /></div>
+            <div class="logo"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><img src="../content/icon/dashboard.png" />Tổng quan</li>
+                <li><img src="../content/icon/report.png" />Báo cáo</li>
+                <li><img src="../content/icon/dashboard.png" /> Mua hàng</li>
+                <li><img src="../content/icon/dic-employee.png" /><a href="customer.html">Danh mục Khách hàng</a></li>
+                <li><img src="../content/icon/dic-employee.png" /><a href="employee.html">Danh mục Nhân viên</a></li>
+                <li><img src="../content/icon/setting.png" />Thiết lập hệ thống</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <div class="left">
+            <select>
+                <option>Nhà hàng Biển Đông</option>
+                <option>Nhà hàng Biển Đông</option>
+                <option>Nhà hàng Biển Đông</option>
+                <option>Nhà hàng Biển Đông</option>
+            </select>
+        </div>
+       <div class="right">
+           <div class="logoUser"></div>
+           <div class="userName">Đàm Minh Giảng</div>
+           <div class="option"></div>
+       </div>
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <p>Danh sách khách hàng</p>
+            <input id="btnAdd" type="button" value="Thêm khách hàng" />
+        </div>
+        <div class="content-search">
+            <input id="btnSearch" type="text" placeholder="Tìm kiếm theo Mã, Tên Khác" />
+            <input id="btnReload" type="button" />
+        </div>
+        <div class="content-table">
+            <table cellspacing="0">
+                <colgroup>
+                    <col width="150" />
+                    <col width="200" />
+                    <col width="100" />
+                    <col width="100" />
+                    <col width="250" />
+                    <col width="200" />
+                    <col width="300" />
+                    <col width="350" />
+                    <col width="150" />
+                    <col width="200" />
+                    
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th fieldName="CustomerCode">Mã khách hàng</th>
+                        <th fieldName="FullName">Họ tên</th>
+                        <th fieldName="GenderName">Giới tính</th>
+                        <th fieldName="DateOfBirth">Ngày sinh</th>
+                        <th fieldName="CustomerGroupName">Nhóm khách hàng</th>
+                        <th fieldName="PhoneNumber">Điện thoại</th>
+                        <th fieldName="Email">Email</th>
+                        <th fieldName="Address">Địa chỉ</th>
+                        <th fieldName="DebitAmount">Số tiền nợ</th>
+                        <th fieldName="MemberCardCode">Mã thẻ thành viên</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="pagging">
+           <div class="pagging-left">Hiển thị 1-10/1000 Khách hàng</div>
+            <div class="pagging-center">
+                <img src="../content/icon/btn-firstpage.svg" />
+                <img src="../content/icon/btn-prev-page.svg" />
+                <img src="../content/icon/btn-next-page.svg" />
+                <img src="../content/icon/btn-lastpage.svg" />
+            </div>
+            <div class="pagging-right">10 Khách hàng/trang</div>
+        </div>
+    </div>
+    <div class="dialog-detail">
+        <div class="dialog-model"></div>
+        <div class="dialog-content">
+            <div class="dialog-content-header">
+              <span style="font-weight:bold;">THÔNG TIN KHÁCH HÀNG</span>
+                <button id="btnCloseFormDetail"></button>
+            </div>
+            <div class="dialog-content-img">
+                <button></button>
+               <p style="text-align:center;">Vui lòng chọn ảnh có định dạng .jpg, .jpeg, .png, .gif,</p>
+            </div>
+            <div class="dialog-content-rightImg">
+               <div class="left">
+                   Mã khách hàng<br />
+                   <input class="input" type="text" /><br />
+                   Mã thẻ thành viên<br />
+                   <input class="input" type="text" /><br />
+                   Ngày sinh<br />
+                   <input class="input" type="date" /><br />
+               </div>
+                <div class="right">
+                    Họ và tên<br />
+                    <input class="input" type="text" /><br />
+                    Nhóm khách hàng<br />
+                    <select>
+                        <option>Khách vip</option>
+                        <option>Khách vip</option>
+                        <option>Khách vip</option>
+                    </select><br />
+                    Giới tính<br /><br />
+                    <span class="clear"><input type="radio" name="gender" /> Nam <input type="radio" name="gender" />Nữ</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery-3.5.1.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/common/base.js"></script>
+    <script src="../js/page/customer.js"></script>
+</body>
+</html>
