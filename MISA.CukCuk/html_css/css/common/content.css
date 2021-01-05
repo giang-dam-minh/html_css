@@ -81,8 +81,8 @@
     text-align:left;
 }
 .content table #address{
-    max-width:350px;
-     width: 350px;
+    max-width:300px;
+     width: 300px;
      overflow: hidden;
      text-overflow: ellipsis;
      white-space: nowrap;

@@ -45,7 +45,7 @@
     <div class="content">
         <div class="content-header">
             <p>Danh sách khách hàng</p>
-            <input id="btnAdd" type="button" value="Thêm khách hàng" />
+            <input class="btnAdd" type="button" value="Thêm khách hàng" />
         </div>
         <div class="content-search">
             <input id="btnSearch" type="text" placeholder="Tìm kiếm theo Mã, Tên Khác" />
@@ -53,19 +53,19 @@
         </div>
         <div class="content-table">
             <table cellspacing="0">
-                <colgroup>
+                <!--<colgroup>
                     <col width="150" />
                     <col width="200" />
                     <col width="100" />
                     <col width="100" />
-                    <col width="250" />
+                    <col width="300" />
                     <col width="200" />
                     <col width="300" />
                     <col width="350" />
                     <col width="150" />
                     <col width="200" />
                     
-                </colgroup>
+                </colgroup>-->
                 <thead>
                     <tr>
                         <th fieldName="CustomerCode">Mã khách hàng</th>
@@ -110,24 +110,51 @@
             <div class="dialog-content-rightImg">
                <div class="left">
                    Mã khách hàng<br />
-                   <input class="input" type="text" /><br />
+                   <input id="txtCustomerCode" required class="input" type="text" /><br />
                    Mã thẻ thành viên<br />
-                   <input class="input" type="text" /><br />
+                   <input id="txtMemberCardCode"  class="input" type="text" /><br />
                    Ngày sinh<br />
-                   <input class="input" type="date" /><br />
+                   <input id="txtDateOfBirth" class="input" type="date" /><br />
                </div>
                 <div class="right">
                     Họ và tên<br />
-                    <input class="input" type="text" /><br />
+                    <input id="txtFullName" required class="input" type="text" /><br />
                     Nhóm khách hàng<br />
-                    <select>
-                        <option>Khách vip</option>
-                        <option>Khách vip</option>
-                        <option>Khách vip</option>
+                    <select id="cbxCustomerGroup">
+                        
                     </select><br />
                     Giới tính<br /><br />
-                    <span class="clear"><input type="radio" name="gender" /> Nam <input type="radio" name="gender" />Nữ</span>
+                    <span class="clear"><input type="radio" id="Nam" name="gender" /> Nam <input type="radio" id="Nu" name="gender" />Nữ</span>
                     
+                </div>
+                
+            </div>
+            <div class="dialog-content-center">
+                <div class="left">Email<br />
+                    <input id="txtEmail" type="email" placeholder="example@domain.com" type="text" />
+                </div>
+                <div class="right">
+                    Số điện thoại<br />
+                    <input required id="txtPhoneNumber" type="text" />
+                </div>
+            </div>
+            <div class="dialog-content-center">
+                <div class="left">
+                    Tên công ty<br />
+                    <input id="txtCompanyName" type="text" />
+                </div>
+                <div class="right">
+                    Mã số thuế<br />
+                    <input id="txtCompanyTaxCode" placeholder="Mã số thuế của công ty" type="text" />
+                </div>
+            </div>
+            <br />
+            Địa chỉ
+            <input id="txtAddress" type="text" />
+            <div class="dialog_footer">   
+                <div class="button">          
+                    <button id="btnCancel">Hủy</button>
+                    <button id="btnSave">Lưu</button>
                 </div>
             </div>
         </div>

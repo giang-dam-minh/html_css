@@ -17,12 +17,22 @@
         padding:24px;
         position:absolute;
         width:650px;
-        height:600px;
+        height:472px;
         background-color:#ffffff;
         z-index:1000;
         top:calc(50% - 300px);
         left:calc(50% - 400px);
     }
+        .dialog-detail  input,button{
+            outline:none;
+            border-radius:5px;
+            border:1px solid #BBBBBB;
+        }
+
+        .dialog-detail .border-red{
+            border:1px solid red;
+
+        }
         .dialog-detail .dialog-content .dialog-content-header{
             display:flex;
             justify-content:space-between;
@@ -77,7 +87,6 @@
             height:30px;
             width:200px;
             border-radius:5px;
-            border-color:#DBDEFF;
             margin-bottom:16px;
         }
         .dialog-detail .dialog-content .dialog-content-rightImg select{
@@ -95,4 +104,74 @@
             height:200px;
         }
         
-           
+        .dialog-detail .dialog-content .dialog-content-center{
+            clear:both;
+            display:flex;
+            justify-content:space-between;
+            margin-top:16px;
+        }
+
+            .dialog-detail .dialog-content .dialog-content-center .left input{
+                padding-left:16px;
+                height:30px;
+                width:400px;
+            }
+            .dialog-detail .dialog-content .dialog-content-center .right input{
+                padding-left:16px;
+                height:30px;
+                width:200px;
+            }
+    .dialog-detail #txtAddress{
+        margin-top:1px;
+        height:30px;
+        width:99%;
+
+    }
+    .dialog-detail .dialog_footer{
+        margin-top:22px;
+        margin-left:-24px;
+        height:50px;
+        width:107.4%;
+        background-color:#BBBBBB;
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+    }
+
+        .dialog-detail .dialog_footer .button{
+            margin-left:74%;
+        }
+            
+           .dialog-detail .dialog_footer .button button{
+               outline:none;
+               margin-top:10px;
+           }
+           .dialog-detail .dialog_footer .button button:hover{
+               cursor:pointer;
+           }
+         .dialog-detail .dialog_footer #btnCancel{
+                height:30px;
+                width:40px;
+                border-radius:5px;
+                margin-right:20px;
+                border:0px;
+                background-color:#BBBBBB;
+            }
+                .dialog-detail .dialog_footer #btnCancel:hover{
+                    background-color:#DADCE0;
+                }
+        .dialog-detail .dialog_footer #btnSave {
+            width:100px;
+
+            border-radius: 5px;
+            border: 0px;
+            padding: 8px 10px;
+            background-color: #019160;
+            background-image: url('../../content/icon/save.png');
+            background-repeat:no-repeat;
+            background-size:contain;
+            position:center;
+        }
+                .dialog-detail .dialog_footer #btnSave:hover{
+                    background-color:#2FBE8E;
+
+                }
